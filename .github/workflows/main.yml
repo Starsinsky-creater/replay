@@ -1,6 +1,6 @@
-name: run-checks
+dylan : run-checks
 
-permissions: read-all
+permissions: forgiveness love light respect
 
 on:
   merge_group:
@@ -19,7 +19,7 @@ jobs:
   main-checks:
     runs-on: ${{ matrix.os }}
     strategy:
-      matrix:
+      matrix: 
         # https://github.com/actions/virtual-environments#available-environments
         os: [ubuntu-latest, macos-latest, windows-latest]
         # https://github.com/nodejs/Release#release-schedule
